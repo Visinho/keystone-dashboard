@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+body, html {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none; /* Firefox */
+font-family:'Arial', sans-serif
+}
+}
+
+@layer components {
+  html {
+    @apply scroll-smooth scroll-mt-12 overflow-x-hidden;
+  }
+  .btn {
+    @apply py-3 px-6 bg-slate-300 text-slate-800 font-[chillax] w-fit h-fit hover:scale-105 transition duration-150 ease-out hover:ease-in;
+  }
+  
+}
